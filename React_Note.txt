@@ -1,0 +1,38 @@
+React:
+
+* React.js (or simply React ) is an open source java script library developed by facebook.
+* it is widly used for building UI based web applications
+* it allows to create reusable UI components and efficiently updates & render those components when the underlying data changes
+
++ Virtual DOM---------		
+					  |----Single Page Applications
++ Components----------		
+
+
+
+
+1) install node: https://nodejs.org/en/download
+1) install VS code studio
+2) check node and npm versions
+	>node -v
+	>npm -v
+
+Legacy way of creation react application:
+	1) Create react application using commands
+	   >npx create-react-app myfirstreact
+	   >cd myfirstreact
+	   >npm start---------> once application start it opens localhost:3000
+
+	   
+Understand the project structure:	   
+1) Open myfirstreact in VS code studio
+2) MYFIRSTREACT
+		node_modules---------------------like target with dependencies .m2 folder
+		public
+		src
+		.gitignore
+		 package-lock.json
+		 package.json--------------------like pom.xml
+		 README.md
+		 
+
