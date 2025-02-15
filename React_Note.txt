@@ -53,6 +53,7 @@ Create Components
 	4) import this component in another component
 
 * install 'Simple React Snippets' or any other extentions in VS code
+ShortCut:rfce React Functional Component Export
 
 
 Nested Compopent:
@@ -110,4 +111,4 @@ Props
 						Date(communication 1-way)
 	Component1(Parent)--------------------------->Component2(Child)
 
-
+ShortCut:rafc React Arrow Functional Component 
