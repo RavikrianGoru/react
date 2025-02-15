@@ -5,7 +5,7 @@ const StateMgmt = () => {
 
     const [city, setCity] = useState("Hyderabad");
     console.log(city);
-    setCity("Hyd");
+    //setCity("Hyd"); it must be used with some condition
 
     return (
         <div>

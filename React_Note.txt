@@ -164,7 +164,16 @@ State Management:
 
 	},[city]);
 
-	
+Ternary Operator: same like if-else statement but in one line.
+	Condition = True / False	
+	Syntax:
+		Condition?True:False
+	Example:
+		const[someCondition,SetSomeCondition]=useState[true];
+		someCondition?"I am 1st Statement true":"I am 2nd statement false";
+
+
+
 
 
 

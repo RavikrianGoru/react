@@ -10,6 +10,7 @@ import CarParent from './e6-props-destructure/CarParent';
 import StateMgmt from './e7-statemanagement/StateMgmt';
 import StateMgmt1 from './e7-statemanagement/StateMgmt1';
 import StateMgmt2 from './e7-statemanagement/StateMgmt2';
+import P1 from './e8-ternary-operator/P1';
 
 
 
@@ -30,6 +31,8 @@ function App() {
       <StateMgmt />
       <StateMgmt1 />
       <StateMgmt2 />
+
+      <P1 />
 
 
     </section>
