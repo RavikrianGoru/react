@@ -99,4 +99,15 @@ Elements
 	Element Rules
 	Element Styling
 
+Images
+	local and internet Images
+	<img src="https://m.media-amazon.com/images/I/61+6tqsjzDL._AC_UF1000,1000_QL80_.jpg" alt="Check net connection" />
+    <img className="profile" src="pics/ravi.jpg" alt="local path issue" />
+
+Props
+	Props/Properties(read only)	intercomponent communication 
+
+						Date(communication 1-way)
+	Component1(Parent)--------------------------->Component2(Child)
+
 

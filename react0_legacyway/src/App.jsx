@@ -1,9 +1,10 @@
-import React from 'react'
-import './App.css'
-import Apple from './e1-components/Apple'
-import Fruite from './e1-components/Fruite'
-import Vegtables from './e2-css-styling/Vegtables'
-import FruitesDoLike from './e3-jsx/FruitesDoLike'
+import React from 'react';
+import './App.css';
+import Apple from './e1-components/Apple';
+import Fruite from './e1-components/Fruite';
+import Vegtables from './e2-css-styling/Vegtables';
+import FruitesDoLike from './e3-jsx/FruitesDoLike';
+import Box from './e4-elements/Box';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Fruite />
       <Vegtables />
       <FruitesDoLike />
+      <Box />
     </section>
   )
 }
