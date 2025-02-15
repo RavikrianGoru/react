@@ -1,3 +1,51 @@
 body {
   border: 4px solid red;
 }
+
+/* Styling for <h1> */
+h1 {
+  color: #2c3e50;
+  /* Dark color */
+  font-size: 48px;
+  /* Larger font size */
+  font-family: 'Arial', sans-serif;
+  /* Font style */
+  text-align: left;
+  /* Center the text */
+  font-weight: bold;
+  /* Make text bold */
+  margin-bottom: 20px;
+  /* Add space below the <h1> */
+}
+
+/* Styling for <h2> */
+h2 {
+  color: #2980b9;
+  /* Blue color */
+  font-size: 36px;
+  /* Slightly smaller font size */
+  font-family: 'Georgia', serif;
+  /* Serif font */
+  text-align: left;
+  /* Align text to the left */
+  font-weight: normal;
+  /* Normal weight */
+  margin-bottom: 15px;
+  /* Add space below the <h2> */
+}
+
+/* Styling for <h3> */
+h3 {
+  color: #27ae60;
+  /* Green color */
+  font-size: 28px;
+  /* Smaller font size */
+  font-family: 'Courier New', monospace;
+  /* Monospace font */
+  text-align: left;
+  /* Align text to the right */
+  font-weight: lighter;
+  /* Lighter weight */
+  margin-bottom: 10px;
+  /* Add space below the <h3> */
+}

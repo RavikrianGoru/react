@@ -1,19 +1,18 @@
 import React from 'react'
 import './App.css'
+import Apple from './e1-components/Apple'
+import Fruite from './e1-components/Fruite'
+import Vegtables from './e2-css-styling/Vegtables'
+import FruitesDoLike from './e3-jsx/FruitesDoLike'
 
-let a = "Apples"
-let b = 'Banana'
 
 function App() {
   return (
     <section>
-      <div>
-        <h1>JavaScript XML-1</h1>
-      </div>
-      <div>
-        <h1>JavaScript XML-2</h1>
-      </div>
-      <h1>I like {a} and {b}</h1>
+      <Apple />
+      <Fruite />
+      <Vegtables />
+      <FruitesDoLike />
     </section>
   )
 }
