@@ -53,7 +53,7 @@ Create Components
 	4) import this component in another component
 
 * install 'Simple React Snippets' or any other extentions in VS code
-ShortCut:rfce React Functional Component Export
+ShortCut:rfce --> React Functional Component Export
 
 
 Nested Compopent:
@@ -111,4 +111,17 @@ Props
 						Date(communication 1-way)
 	Component1(Parent)--------------------------->Component2(Child)
 
-ShortCut:rafc React Arrow Functional Component 
+ShortCut: rafc--> React Arrow Functional Component 
+
+
+Prop Destructuring
+	1) Passing userdefined object to child component from parent component
+	const carData = {
+    	model: "Maruti",
+    	year: 2012,
+    	dealer: "XYZ Dealer",
+    	color: "red"
+	}
+	 <CarDetails car={carData} />
+	2) Child component extract as individual fields and can use directly.
+		const { model, year, dealer, color } = props.car;

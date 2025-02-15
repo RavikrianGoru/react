@@ -12,7 +12,7 @@ const address = {
 const ParentComp = (props) => {
     return (
         <div>
-            <h1>Props:Properties and inter-component communications</h1>
+            <h2>Props:Properties and inter-component communications</h2>
             <FirstComp name="Ravi" city={address.city} />
             <SecondComp name="Kiran" city={address.city} />
             <ThirdComp name="Goru" city={address.area} />

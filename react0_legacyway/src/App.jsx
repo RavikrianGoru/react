@@ -6,6 +6,7 @@ import Vegtables from './e2-css-styling/Vegtables';
 import FruitesDoLike from './e3-jsx/FruitesDoLike';
 import Box from './e4-elements/Box';
 import ParentComp from './e5-props/ParentComp';
+import CarParent from './e6-props-destructure/CarParent';
 
 
 
@@ -20,6 +21,8 @@ function App() {
 
 
       <ParentComp />
+
+      <CarParent />
 
 
     </section>
