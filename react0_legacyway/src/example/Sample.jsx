@@ -7,12 +7,19 @@ const Mango = () => {
     )
 }
 
+const Grape = () => {
+    return (
+        <h2>Grapes are small</h2>
+    )
+}
+
 
 function Sample() {
     return (
         <div>
             Sample
             <Mango />
+            <Grape />
         </div>
     )
 }
