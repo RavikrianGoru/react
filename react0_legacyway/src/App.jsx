@@ -7,6 +7,9 @@ import FruitesDoLike from './e3-jsx/FruitesDoLike';
 import Box from './e4-elements/Box';
 import ParentComp from './e5-props/ParentComp';
 import CarParent from './e6-props-destructure/CarParent';
+import StateMgmt from './e7-statemanagement/StateMgmt';
+import StateMgmt1 from './e7-statemanagement/StateMgmt1';
+import StateMgmt2 from './e7-statemanagement/StateMgmt2';
 
 
 
@@ -23,6 +26,10 @@ function App() {
       <ParentComp />
 
       <CarParent />
+
+      <StateMgmt />
+      <StateMgmt1 />
+      <StateMgmt2 />
 
 
     </section>

@@ -10,7 +10,6 @@ React:
 
 
 
-
 1) install node: https://nodejs.org/en/download
 1) install VS code studio
 2) check node and npm versions
@@ -125,3 +124,49 @@ Prop Destructuring
 	 <CarDetails car={carData} />
 	2) Child component extract as individual fields and can use directly.
 		const { model, year, dealer, color } = props.car;
+
+State Management:
+	I) useState Hook: hoots are functions are available in Function Components only. N/A in class Components.
+
+	Syntax: 
+		const [state,setState]=useState()
+	Example 
+		const[city,setCity]=useState("Hyderabad");
+	
+	1) import useState
+	2) syntax useState be used in function at top level.
+	3) When we try to change the state by using setCity("Delhi"): it will go to infinate loop.
+		We have to use setCity(-) in conditions
+		If we try to add mulitple condition the we will get error.
+		We have to use effective Hook condition.
+		
+	II) useEffect Hook
+	useEffect it manages the side effects (Allows subscriptions)
+	
+	Syntax:
+		useEffect(()=>{},[])
+	Explination useEffect with paranthesis and has one callbacl function ()=>{}, and dependency []
+
+	1) import useState and useEffect
+	2) syntax useState be used in function at top level.
+	3) setting state multiple time must be used in condition and condition must be used in useEffect's callback function
+	4) we can pass state in dependency, the state will be monitored and updated in DOM.
+	const [city,setCity]=useState("Hyd");
+
+	useEffect(
+		()=>{
+		if(city==="Hyd")
+		{
+			setCity("H");
+		}else{
+			setCity("not H");
+		}
+
+	},[city]);
+
+	
+
+
+
+
+	
