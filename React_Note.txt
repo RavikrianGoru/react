@@ -26,6 +26,9 @@ Legacy way of creation react application:
 	   
 Understand the project structure:	   
 1) Open myfirstreact in VS code studio
+   >cd myfirstreact
+   > code .
+   Above command will open the code in VS code IDE.
 2) MYFIRSTREACT
 		node_modules---------------------like target with dependencies .m2 folder
 		public
@@ -34,4 +37,16 @@ Understand the project structure:
 		 package-lock.json
 		 package.json--------------------like pom.xml
 		 README.md
-		 
+
+Components:
+----------
+	Components are building blocks in UI
+	Types:
+		1) Functional Components(Latest)
+		2) Class Components(Old versions)
+
+Create Components
+	1) Create file( use jsx extention)
+	2) create functional or class componetn
+	3) export the components
+	4) import this component in another component
