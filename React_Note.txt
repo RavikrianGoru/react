@@ -75,4 +75,20 @@ CSS react
 	CSS Frameworks
 		Material UI, Chakra UI, React Bootstrap, Gromment, React Redux, React Router, Blueprint UI, Fluent UI, Semantic UI React, React Admin.
 
-	
+JSX: Javascript XML
+	Clear Boiler Plate
+	What is JSX
+		Earlier html tags in .html file and javascript code in .js file
+		Javascript XML, allows to write html and js code in .jsx file. 
+	JSX Rules
+		Component must start with Capital letter.
+		all element must be in some parent element like <div>, <section>,...etc.
+	Dynamic data
+		dynamic data can be passed through {}
+		let a='Banana';
+
+		<div>
+			<h1> I like {a}</h1>
+		</div>
+
+
