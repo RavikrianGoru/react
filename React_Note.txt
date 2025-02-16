@@ -173,6 +173,27 @@ Ternary Operator: same like if-else statement but in one line.
 		someCondition?"I am 1st Statement true":"I am 2nd statement false";
 
 
+Events:
+	1) Mouse Events
+		click
+		dblclick(Double Click)
+		mouseover
+		mouseout
+		mouseenter
+		mouseleave
+		mousedown
+		mouseup
+	2) Keyboard Events
+		keydown
+		keyup
+		keypress
+	3) Form Events
+		submit
+		reset
+		focus
+		blur 
+		change
+		input
 
 
 
