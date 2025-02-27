@@ -12,6 +12,9 @@ import StateMgmt1 from './e7-statemanagement/StateMgmt1';
 import StateMgmt2 from './e7-statemanagement/StateMgmt2';
 import P1 from './e8-ternary-operator/P1';
 import ClickEvent from './e9-events/ClickEvent';
+import Resize from './e10-eventListeners/Resize';
+import FormEventExample from './e11-formEvents/FormEventExample';
+import FormEventExample1 from './e11-formEvents/FormEventExample1';
 
 
 
@@ -37,6 +40,9 @@ function App() {
 
       <ClickEvent />
 
+      <Resize />
+      <FormEventExample />
+      <FormEventExample1 />
 
     </section>
   )

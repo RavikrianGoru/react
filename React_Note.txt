@@ -1,6 +1,6 @@
 React:
 
-* React.js (or simply React ) is an open source java script library developed by facebook.
+* React.js (or simply React ) is an open source javascript library developed by facebook.
 * it is widly used for building UI based web applications
 * it allows to create reusable UI components and efficiently updates & render those components when the underlying data changes
 
@@ -36,9 +36,12 @@ Understand the project structure:
 		 package-lock.json
 		 package.json--------------------like pom.xml
 		 README.md
+=======================================================
 
 Components:
 ----------
+In React, there are primarily two types of components: Class components and Function components. With the introduction of React Hooks, function components have become the more commonly used type, but class components are still used in many legacy codebases
+
 	Components are building blocks in UI
 	Types:
 		1) Functional Components(Latest)
@@ -71,6 +74,7 @@ Nested Compopent:
 CSS react
 --------
 	CSS file and Modules
+	create .css file and just import in your .jsx file.
 	CSS Implementation
 	CSS Frameworks
 		Material UI, Chakra UI, React Bootstrap, Gromment, React Redux, React Router, Blueprint UI, Fluent UI, Semantic UI React, React Admin.
@@ -126,7 +130,7 @@ Prop Destructuring
 		const { model, year, dealer, color } = props.car;
 
 State Management:
-	I) useState Hook: hoots are functions are available in Function Components only. N/A in class Components.
+	I) useState Hook: hooks are functions are available in Function Components only. N/A in class Components.
 
 	Syntax: 
 		const [state,setState]=useState()
@@ -145,7 +149,7 @@ State Management:
 	
 	Syntax:
 		useEffect(()=>{},[])
-	Explination useEffect with paranthesis and has one callbacl function ()=>{}, and dependency []
+	Explination useEffect with paranthesis and has one callback function ()=>{}, and dependency []
 
 	1) import useState and useEffect
 	2) syntax useState be used in function at top level.
@@ -195,6 +199,16 @@ Events:
 		change
 		input
 
+EventListeners
+
+Form events:
+	get input values
+	controlled
+	forms vs inputs
+	form events
+
+* 	Form submit will clear the screen while reloading.
+*   use preventDefult() in calling form submit related method to hold data while screen reloading.
 
 
 
