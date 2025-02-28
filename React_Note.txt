@@ -210,7 +210,20 @@ Form events:
 * 	Form submit will clear the screen while reloading.
 *   use preventDefult() in calling form submit related method to hold data while screen reloading.
 
+NPM: npmjs.com
+	npm stands for Node Package Manager. It is a package manager for JavaScript and is the default package manager for the JavaScript runtime environment Node.js.
+	1. Pakage Management
+	2. Command-Line Tool
+	3. npm Registry
+	4. Version controlled
+
+Ref: npmjs.com	
+install react-toastify
+1. search : react-toastify
+2. open terminal: npm i react-toastify
 
 
+Array
 
-	
+
+https://www.youtube.com/watch?v=JvENsHqWXfw
