@@ -257,5 +257,10 @@ Array
 
 Neasted Object in array:
 	open and collecte json dta gtom json placeholder site. Ref: https://jsonplaceholder.typicode.com/
-	
+
+
+Template Strings/Literals: can be used with backtick `
+	consta name="ravi";
+	{`Hello!, Good Morning! ${name}`}
+
 

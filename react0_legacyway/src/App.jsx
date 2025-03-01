@@ -17,6 +17,7 @@ import FormEventExample from './e11-formEvents/FormEventExample';
 import FormEventExample1 from './e11-formEvents/FormEventExample1';
 import ArraysDemo from './e12-arrays/ArraysDemo';
 import ArrayNestedObjs from './e13-arrays-nested-objs/ArrayNestedObjs';
+import TempLiteral from './e14-template-literal/TempLiteral';
 
 
 
@@ -49,6 +50,7 @@ function App() {
       <ArraysDemo />
       <ArrayNestedObjs />
 
+      <TempLiteral />
 
 
     </section>
