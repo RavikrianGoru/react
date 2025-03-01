@@ -263,4 +263,78 @@ Template Strings/Literals: can be used with backtick `
 	consta name="ravi";
 	{`Hello!, Good Morning! ${name}`}
 
+Fetch Data drom API and Error handling:
+	realtime data can be consumed through rest API. 
+	we use fetch() method to get data from backend or service.
 
+	Get API:
+	-------
+		const userGetApi = "https://jsonplaceholder.typicode.com/posts";
+
+		const [userData, setUserData] = useState([]);
+
+    	const getApiCall = async (getAPI) => {
+    	    console.log("API :", getAPI);
+    	    const response = await fetch(getAPI);
+    	    const jsonData = await response.json();
+    	    setUserData(jsonData);
+    	    //return jsonData;
+   		}
+
+		useEffect(() => {
+       	 	console.log(getApiCall(userGetApi));
+    	}, []);
+
+	Post API:
+	--------
+		const empPostApi = "http://localhost:8080/emp";
+
+    	const [name, setName] = useState("");
+    	const [role, setRole] = useState("");
+    	const [email, setEmail] = useState("");
+    	const [dep, setDep] = useState("");
+
+    	//fetch response, error
+    	const [data, setData] = useState(null);
+    	const [error, setError] = useState(null);
+
+    	//console.log(name, role, email, dep);
+
+    	const empObj = { name, role, email, dep };
+
+	
+		const postEmpDetails = async (e) => {
+    	    e.preventDefault();
+    	    console.log("Employee details:", empObj);
+
+    	    try {
+    	        //Calling post API
+    	        const response = await fetch(
+    	            empPostApi,
+    	            {
+    	                method: "POST",
+    	                headers: { "Content-Type": "Application/json" },
+    	                body: JSON.stringify(empObj)
+    	            }
+    	        );
+    	        // Check if the response is not OK (status code 4xx/5xx)
+    	        if (!response.ok) {
+    	            throw new Error(`HTTP error! Status: ${response.status}`);
+    	        }
+
+    	        // Parse the JSON response
+    	        const result = await response.json();
+    	        setData(result); // Handle the response data
+    	        console.log("result:", result);
+    	    } catch (error) {
+    	        // Catch and handle network errors or any other exceptions
+    	        setError(error.message);
+    	        console.error('Error during fetch request:', error);
+    	    }
+    	}
+
+1. Conditional Rendering:
+	In React, {condition && <element />} is a shorthand for rendering the <element /> only if the condition is true (or truthy). If the condition is false (or falsy), nothing is rendered.		
+
+	Ex:
+		{error && <p style={{ color: 'red' }}>Error: {error}</p>}

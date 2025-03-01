@@ -18,12 +18,15 @@ import FormEventExample1 from './e11-formEvents/FormEventExample1';
 import ArraysDemo from './e12-arrays/ArraysDemo';
 import ArrayNestedObjs from './e13-arrays-nested-objs/ArrayNestedObjs';
 import TempLiteral from './e14-template-literal/TempLiteral';
+import FetchDemo from './e15-fetch/FetchDemo';
+import FetchDemoPost from './e15-fetch/FetchDemoPost';
 
 
 
 function App() {
   return (
     <section>
+      {/*
       <Apple />
       <Fruite />
       <Vegtables />
@@ -52,7 +55,11 @@ function App() {
 
       <TempLiteral />
 
+      <FetchDemo />
+      */
+      }
 
+      <FetchDemoPost />
     </section>
   )
 }
