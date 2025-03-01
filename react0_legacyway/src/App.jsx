@@ -15,6 +15,7 @@ import ClickEvent from './e9-events/ClickEvent';
 import Resize from './e10-eventListeners/Resize';
 import FormEventExample from './e11-formEvents/FormEventExample';
 import FormEventExample1 from './e11-formEvents/FormEventExample1';
+import ArraysDemo from './e12-arrays/ArraysDemo';
 
 
 
@@ -43,6 +44,10 @@ function App() {
       <Resize />
       <FormEventExample />
       <FormEventExample1 />
+
+      <ArraysDemo />
+
+
 
     </section>
   )
