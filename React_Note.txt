@@ -255,3 +255,7 @@ Array
                 })
             };
 
+Neasted Object in array:
+	open and collecte json dta gtom json placeholder site. Ref: https://jsonplaceholder.typicode.com/
+	
+

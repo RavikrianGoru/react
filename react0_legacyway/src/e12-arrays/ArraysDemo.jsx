@@ -30,7 +30,7 @@ const ArraysDemo = () => {
                         </div>
                     )
                 })
-            };
+            }
         </div>
     )
 }
