@@ -48,13 +48,14 @@ const MultiState = () => {
     return (
         <div>
             {state.loading && <p> Loading.... </p>}
-            {state.data && <div>
+            {state.data && (<div>
                 {state.data.map((item) => {
                     return <div>
                         {item.id} {item.title}
                     </div>
                 })}
-            </div>}
+            </div>)}
+            {state.error && <div>{alert(state.error)}</div>}
         </div>
     )
 }
