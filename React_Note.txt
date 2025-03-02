@@ -332,9 +332,54 @@ Fetch Data drom API and Error handling:
     	        console.error('Error during fetch request:', error);
     	    }
     	}
-
-1. Conditional Rendering:
+Conditional Rendering:
 	In React, {condition && <element />} is a shorthand for rendering the <element /> only if the condition is true (or truthy). If the condition is false (or falsy), nothing is rendered.		
 
 	Ex:
 		{error && <p style={{ color: 'red' }}>Error: {error}</p>}
+
+DOM vs Virtual DOM:
+------------------
+
+1. DOM(Document Object Model) :The DOM is the representation of the web page that browsers use. It's a hierarchical structure of HTML elements, which can be modified by JavaScript to dynamically update the content of a web page.
+When you interact with a webpage (for example, clicking a button or entering text), the browser manipulates the DOM to reflect those changes on the page. Each time something changes in the DOM, the browser has to repaint and reflow the page, which can be expensive in terms of performance, especially for large and complex web applications.
+
+2. Virtual DOM:
+The Virtual DOM is a lightweight copy of the actual DOM in memory. Instead of directly modifying the real DOM, React creates a virtual representation of it, which allows it to make more efficient updates. The virtual DOM improves performance because:
+
+
+Short Circuit Evaluation(&&): same as condition rendering.
+------------------------
+
+
+Spred Operator: (...)
+--------------
+const one=["A","B"];
+const two=["C","D"];
+const three=["E","F"];
+
+const four=[...one, ...two, ...three];
+
+
+const obj1={a:1,b:2};
+const obj2={c:3,d:4};
+
+const objs={...obj1, ...obj2};
+
+
+userReducer Hook:
+================ used to manage multiple states.
+
+State menagement:
+	1. useState Hook
+	2. useReducer Hook
+	3. Redux (External library)
+
+useReducer: 
+	API Call:
+		1. Loading
+		2. API response(success)
+		3. Error
+	syntax:
+		const[state, dispath]=useReduce(function,initialState);
+

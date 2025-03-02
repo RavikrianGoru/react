@@ -20,6 +20,8 @@ import ArrayNestedObjs from './e13-arrays-nested-objs/ArrayNestedObjs';
 import TempLiteral from './e14-template-literal/TempLiteral';
 import FetchDemo from './e15-fetch/FetchDemo';
 import FetchDemoPost from './e15-fetch/FetchDemoPost';
+import SpreadOprtr from './e16-spread-operator/SpreadOprtr';
+import MultiState from './e17-statemanagement/MultiState';
 
 
 
@@ -56,10 +58,16 @@ function App() {
       <TempLiteral />
 
       <FetchDemo />
+      <FetchDemoPost />
+
+      <SpreadOprtr />
+      
       */
       }
+      <MultiState />
 
-      <FetchDemoPost />
+
+
     </section>
   )
 }
