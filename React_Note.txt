@@ -383,3 +383,36 @@ useReducer:
 	syntax:
 		const[state, dispath]=useReduce(function,initialState);
 
+
+React + Vite:
+============
+Latest way to install React through react.dev site.
+Ref: https://react.dev/learn
+
+1) Create a react project using Vite. Ref: https://vite.dev/guide/
+	Open cmd prompt:
+		> npm create vite@latest
+			project: reavt1_vite
+			framework: React
+			variant: javascript
+		> cd reavt1_vite
+		> npm install
+		> npm run dev
+	Remove upwanted files,css,code.
+
+
+React Router DOM:
+================
+One of the way to linnk multiple pages in site.
+	1. Install React Router DOM
+	
+	2. Wrap App in BrowserRouter
+	3. Define Route in Routes
+	4. Link Elements
+
+useContext Hook
+===============
+	1. Create Context
+	2. Provider Function
+	3. Custom Component
+	4. Custom Hook
