@@ -437,7 +437,35 @@ Search :react-router-dom
 
 useContext Hook
 ===============
+	Inter component communication (one directional) from parent to child component.
+	Passing some data from Parent1->Child1->Child2->Child3->Child4 can be achieved through Props and Context both.
+
 	1. Create Context
 	2. Provider Function
 	3. Custom Component
 	4. Custom Hook
+
+		import {createContext,useContext,useState} from'react';
+
+		//1. Create Context
+		const GiftContext = createContext(); 
+
+
+		//2. Provider Function
+		export const GiftProvider = ({children})=>{
+			const [surprise, setSurprise] = useState("Apple");
+
+			return (
+				//3. Custom Component
+				<GiftContext.Provider value={{surprise, setSurprise}}>
+					{children}
+				</GiftContext.Provider>
+			)
+
+		}
+
+		//4. Custom Hook
+		export const useDate=()=>useContext(GiftContext);
+
+
+
