@@ -1,0 +1,13 @@
+.navSection {
+    border: 1px solid blue;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navSection ul li {
+    display: inline-flex;
+    list-style: none;
+    margin: 20px;
+    font-size: 2rem;
+}

@@ -404,11 +404,36 @@ Ref: https://react.dev/learn
 React Router DOM:
 ================
 One of the way to linnk multiple pages in site.
+Open https://www.npmjs.com/
+Search :react-router-dom
+
 	1. Install React Router DOM
-	
+		> npm install react-router-dom
+		or 
+		> npm i react-router-dom
+
 	2. Wrap App in BrowserRouter
-	3. Define Route in Routes
+		Open main component (main.jsx)
+		import BrowserRouter and wrpa App component within BrowserRouter tags.
+		create a few components like LeftCard,RightCard,MiddleCard,BottomCard 
+	3. Define Route in Routes as below. so, we can access the links like http://localhost:5173/leftcard
+	<Routes>
+        <Route path='/leftcard' element={<LeftCard />} />
+        <Route path='/rightcard' element={<RightCard />} />
+        <Route path='/middlecard' element={<MiddleCard />} />
+        <Route path='/bottomcard' element={<BottomCard />} />
+      </Routes>
+
+	Open App component and import Routes component
+
 	4. Link Elements
+	Create NacCard and like below
+			<ul>
+                <Link to='/leftcard'><li>Left</li></Link>
+                <Link to='/rightcard'><li>Right</li></Link>
+                <Link to='/middlecard'><li>Middle</li></Link>
+                <Link to='/bottomcard'><li>Bottom</li></Link>
+            </ul >
 
 useContext Hook
 ===============
