@@ -1,0 +1,48 @@
+PreRequisites:
+    HTML
+    CSS
+    JavaScript
+
+TypeScript :
+    is a superset of javascript, identifies error during development.
+
+React:
+    is open source javascript library.
+    
+    HTML---->DOM 
+    JvaScript interact html page by updating DOM structure.
+
+Install node
+        VS Code-->  : prettier extention --> update settings--> format on save.
+
+Creating a react app:
+    1. Create React App (CRA)
+    2. Vite
+> npm create vite@latest
+    Project name:vite-project
+    Select a framework:React
+│   Select a variant:TypeScript
+>cd vite-project
+>npm install    
+>npm run dev 
+
+
+Extention of TypeScript file is .ts or .tsx
+.ts  -->  for type script files
+.tsx -->  for react components
+
+Convert JavaScript XML code to javaScript : babeljs.io
+
+React: 
+    is a opensource javascript library to build UI through Components. 
+    Library: A tool that provides specific functionality.
+
+
+Anugualr:
+    is a framwork.
+    Framework:A set of tools and guidelines for building apps.
+
+
+Install Bootstrap  
+>npm i bootstrap@latest
+ 
