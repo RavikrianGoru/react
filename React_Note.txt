@@ -469,3 +469,146 @@ useContext Hook
 
 
 
+what is react jS:
+	react is a javascript library to build UI for web applications.
+	it allows to build reusable UI component and  efficiently updates & render those components when the underlying data changes.
+
+Current version of react? : 19.0.0
+
+Advantages of react:
+	Component based artitecture 
+	Virtual DOM
+	Declarative sysntax
+	Fast
+	Scalable
+Rendering in react:
+	The process of converting react components into actual UI element that are displayed on the screen.
+
+Client Side rendering vs Server side rendering ?
+
+Babel in react?
+	Bable is javascript compiler taht used to convert 'Modern Java Script' code into versions of JavaScript that can run in all browsers.
+	Bable in React, convert JSX syntax into regular JavaScript that browser can understand.
+
+Webpack?
+	is a Module bundler that is commonly used with react to bundle and manage dependencies. it takes all js fiels, other assert(css,images_) in a project into a single bundle that can be loaded by the browser.
+	>npm run build 
+
+Virtual DOM:
+	it serves as an intermediary layer between the application state and the actual DOM. it allows react to effeciently update the UI by minimizing the DOM manipulations & optimizing rendering performance.
+
+JSX: javaScript XML.
+	it is a syntax extention to JavaScript that allows to write HTML like code directly in javascript.
+
+Components and Types in React?
+	Components are building block for UI in react.
+		1. Functional Components
+		2. Class Components 
+
+Module:
+	it refere to reusable units of code that is related to functionality(components, functions, and other related code).
+
+types of exports:
+	1. named exports: export multiple values 
+		export const foo = 'foo';
+		export const bar = 'bar';
+
+		import { foo, bar } from './module.js'
+
+		
+	2. default exports: single value
+		export default NavCard
+
+		import abc from './components/NavCard'
+
+Spread operator? '...'
+	it is used to pass properties from one to another object, merging ,updating staes.
+
+	const commonProps ={ name:'ravi', addr:'hyd'};
+
+	<ChildPage {...commonProps} />
+
+
+	const ary1=[1,2,3];
+	const ary2=[4,5,6];
+	const mergeAr=[...ary1, ...ary2];
+
+	const obj1={a:1, b:3};
+	const obj2={a:4, b:6};
+	const mergeObjs={...obj1, ...obj2};
+	
+
+Rest operators? '...'
+ same like spread operator but used in function param.
+
+	function sum(...numbers)
+	{
+		return numbers.reduce(  (acc,num)=>acc+num, 0);
+	}
+	
+	console.log(sum(1,2,3));
+
+Desturcuting:
+	a convenient way to extract multiple values from arrays or objects and assign them to variables.
+
+	const someArray=['apple', 'banana', 'cherry', 'data'];
+	const someObj={
+		prop1:'value1',
+		prop2:'value2',
+		prop3:'value3'
+	}
+
+	const [firstItem, secondItem]=someArray; //array destructuring
+	//firstItem apple
+	//secondItem banana
+
+	const {prop1,prop2}=someObj; //object destructuring
+	// prop1 value1
+	// prop2 value2
+
+short circute evaluation vs ternary operator?
+	
+	<div>
+		{isLoggedIn ? <FirstPage/> : <SecondPage />}
+	</div>
+	
+	
+	<div>
+		{isLoggedIn && <FirstPage/> }
+		{!isLoggedIn && <SecondPage />}
+	</div>
+
+
+Life Cycle Methods in react?
+	The lifecycle methods in react are	
+		1. Component mounting
+		2. Component updating
+		3. Component unmounting
+	The lifecycle features are commonly used in 'Class components' and are replaced with 'useEffect' hook in functional components.
+
+props?
+	props is short form for properties and are used to pass data from one component to another.
+	props are read-only. can not be changed.
+
+state?
+	a state is an object that holds data and information related to a react component.
+	it can be used to store, manage, and update data within the application.
+	Note:
+		'state' is an in-built feature in react class component and are managed by hooks in functional components.
+
+Hooks are types?
+	Hooks are inbuilt functions in react used in functional components.
+	it allows to manage state, perform side effects and access lifecycle methods.
+
+		useState
+		useEffect
+		useContext
+		useRef
+		useCallback
+		useMemo
+		useReducer
+	Note: hooks are to be called only at the top level.
+		  used only in functional components.
+		  can not be called conditionally.
+		  Name Custom hooks with use prefix.
+		  	
