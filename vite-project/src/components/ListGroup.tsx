@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 function ListGroup() {
 
     let items = [
@@ -8,11 +8,17 @@ function ListGroup() {
         'Gnt',
         'Vjy'
     ];
-    items = [];
+    const [selectedIndex, setSelectedIndex] = useState(-1);
+
 
     const getMessage = () => {
         //return items.length === 0 ? <p> No item Found</p> : null;
         return items.length === 0 && <p> No item Found</p>;
+    }
+
+    //Event Hnadler
+    const hadleClick = (event: MouseEvent) => {
+        console.log(event)
     }
 
     return (
@@ -23,7 +29,11 @@ function ListGroup() {
             }
             <ul className="list-group">
                 {
-                    items.map((item) => <li key={item}>{item}</li>)
+                    items.map((item, index) => <li className={selectedIndex === index ? 'list-group-item active' : 'list-group-item'}
+                        key={item}
+                        //onClick={hadleClick}
+                        onClick={() => { setSelectedIndex(index); }}
+                    >{item}</li>)
                 }
             </ul>
         </>
