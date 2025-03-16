@@ -60,5 +60,8 @@ Prps or Properties
     1) Passing Data via Props or Properties 
         Ref: ListGroupWithProps
     2) Passing Function via Props
-        
+        Ref: ListGroupWithProps
+
+State vs Props
+--------------
 

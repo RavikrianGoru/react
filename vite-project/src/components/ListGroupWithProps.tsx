@@ -2,12 +2,13 @@ import { useState } from "react";
 //{items:[], heading:string}
 interface ListGroupProps {
     heading: string;
-    items: string[]
+    items: string[];
+    onSelectItem: (item: string) => void;
 }
 
 
 
-function ListGroupWithProps({ items, heading }: ListGroupProps) {
+function ListGroupWithProps({ items, heading, onSelectItem }: ListGroupProps) {
 
 
     const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -36,7 +37,7 @@ function ListGroupWithProps({ items, heading }: ListGroupProps) {
                     items.map((item, index) => <li className={selectedIndex === index ? 'list-group-item active' : 'list-group-item'}
                         key={item}
                         //onClick={hadleClick}
-                        onClick={() => { setSelectedIndex(index); }}
+                        onClick={() => { setSelectedIndex(index); onSelectItem(item); }}
                     >{item}</li>)
                 }
             </ul>

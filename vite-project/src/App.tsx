@@ -11,10 +11,14 @@ function App() {
   ];
   let heading = 'Citis';
 
+  const handleSelectItem = (item: string) => {
+    console.log(item);
+  };
+
   return <div>
     <Message />
     <ListGroup />
-    <ListGroupWithProps items={items} heading={heading} />
+    <ListGroupWithProps items={items} heading={heading} onSelectItem={handleSelectItem} />
   </div>
 }
 
