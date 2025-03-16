@@ -3,6 +3,7 @@ import Message from "./message";
 import ListGroupWithProps from "./components/ListGroupWithProps";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
+import { useState } from "react";
 function App() {
   let items = [
     'Hyd',
@@ -17,12 +18,16 @@ function App() {
     console.log(item);
   };
 
+  const [alertVisible, setAlertVisible] = useState(false);
+
+
+
   return <div>
     <Message />
     <ListGroup />
     <ListGroupWithProps items={items} heading={heading} onSelectItem={handleSelectItem} />
-    <Alert text="Hello, Good Morning"><i> RaviKiran</i></Alert>
-    <Button color="primary" onClick={() => { console.log('Clicked') }}>My Button</Button>
+    {alertVisible && <Alert text="Hello, Good Morning" onClose={() => { setAlertVisible(false); }}><i> RaviKiran</i></Alert>}
+    <Button color="primary" onClick={() => { console.log('Clicked'); setAlertVisible(true); }}>My Button</Button>
   </div>
 }
 
