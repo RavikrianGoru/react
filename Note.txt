@@ -31,7 +31,7 @@ Extention of TypeScript file is .ts or .tsx
 .ts  -->  for type script files
 .tsx -->  for react components
 
-Convert JavaScript XML code to javaScript : babeljs.io
+*** Convert JavaScript XML code to javaScript : babeljs.io
 
 React: 
     is a opensource javascript library to build UI through Components. 
@@ -43,8 +43,22 @@ Anugualr:
     Framework:A set of tools and guidelines for building apps.
 
 
+
 Install Bootstrap  
 >npm i bootstrap@latest
 
 Open Boostrap site:
     getbootstrap.com
+
+> npm run build
+> npm run dev
+
+***  we have to keep all elements within <div> <Fragment> or <> element.
+
+Prps or Properties
+------------------
+    1) Passing Data via Props or Properties 
+        Ref: ListGroupWithProps
+    2) Passing Function via Props
+        
+
