@@ -64,4 +64,30 @@ Prps or Properties
 
 State vs Props
 --------------
+    Props
+    1. Inputs passed to a components
+    2. similar to function args
+    3. immutable(unchangeable)
+    4. Cause a re-render
+
+    State
+    1. Data managed by a components
+    2. similar to local variables
+    3. Mutable(changeable)
+    4. Cause a re-render
+
+Passing Children:
+----------------
+    Alert.tsx
+
+Inspecting Components with React Dev tools
+------------------------------------------
+    Google React Developer tools and install in browser
+    inspect the code in browser and click on Components.
+
+Building a Button Components
+----------------------------
+Ref: Button.tsx
+
+
 
